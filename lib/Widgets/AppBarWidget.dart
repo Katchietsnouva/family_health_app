@@ -14,6 +14,9 @@ class AppBarWidget extends StatelessWidget {
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
+              boxShadow: BoxShadow(
+                blurRadius: 10,)
+
             ),
             child: Icon(CupertinoIcons.bars),
           ),
