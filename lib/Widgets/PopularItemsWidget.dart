@@ -33,13 +33,14 @@ class PopularItemsWidget extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        // alignment: Alignment.center,
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.all(8),
                         child: Image.asset("images/popular/logo_1.png"),
                         // width: 50,
-                        height: 130,
+                        height: 140,
                       ),
                       Text("Hot Graphiti",
                       style: TextStyle(
