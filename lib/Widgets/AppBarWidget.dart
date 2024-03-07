@@ -45,7 +45,7 @@ class AppBarWidget extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Icon(CupertinoIcons.bars),
+              child: Icon(Icons.notifications),
             ),
           ),
 
@@ -53,3 +53,4 @@ class AppBarWidget extends StatelessWidget {
     );
   }
 }
+

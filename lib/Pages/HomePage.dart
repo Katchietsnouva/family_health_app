@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../Widgets/AppBarWidget.dart';
 
@@ -9,6 +10,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           AppBarWidget(),
+
           // SEARCH
           Padding(
             padding: EdgeInsets.symmetric(
@@ -32,26 +34,34 @@ class HomePage extends StatelessWidget {
               ),
             child: Padding: (
               padding: EdgeInsets.symmetric(
-              horizontal: 10,
+                horizontal: 10,
               ),
               child: Row( children: [
-                Icon(CupertinoIcons.search, color: Colors.red),
-                Container(
+                Icon(
+                  CupertinoIcons.search, 
+                  color: Colors.red,
+                ),
+                Container( 
                   height: 50,
                   width: 300,
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 15,
                       ),
-                    child: TextFormField(),
-                    decoration: InputDecoration(
-                      hintText: InputBorder.none,
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        hintText: "What would you like to have?",
+                        border: InputBorder.none,
+                      ),                    
                     ),
                   ),
                 ),
               ],),
             ),
+            ),
           ),
+            
+          // ),
 
 
         ],
