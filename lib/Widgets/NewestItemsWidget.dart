@@ -13,6 +13,7 @@ class NewestItemsWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         child: Column(
           children: [
+            
 
             // SINGLE ITEM
             for (int i = 0; i < 10; i++)
