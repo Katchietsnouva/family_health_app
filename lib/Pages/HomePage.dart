@@ -56,12 +56,23 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                ],),
+                  Icon(Icons.filter_list),
+                ],
+                ),
               ),
             ),
+            
           ),
             
-          // ),
+          // CATEGORY
+          Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child:  Text("Categories",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),),
+          ),
 
 
         ],
