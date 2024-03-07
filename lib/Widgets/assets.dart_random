@@ -1,0 +1,73 @@
+dependencies:
+  assets: ^2.0.2
+
+
+import 'package:flutter/material.dart';
+import 'package:assets/assets.dart';
+
+class CategoriesWidget extends StatelessWidget {
+  final String assetsDirectory = 'images'; // Change this to your assets directory
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+        child: FutureBuilder<List<String>>(
+          future: _loadImages(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              List<String> imagePaths = snapshot.data!;
+
+              return Row(
+                children: imagePaths.map((imagePath) {
+                  return CategoryItem(imagePath: imagePath);
+                }).toList(),
+              );
+            } else {
+              return CircularProgressIndicator();
+            }
+          },
+        ),
+      ),
+    );
+  }
+
+  Future<List<String>> _loadImages() async {
+    return await Assets.imagesFrom(asset: assetsDirectory);
+  }
+}
+
+class CategoryItem extends StatelessWidget {
+  final String imagePath;
+
+  CategoryItem({required this.imagePath});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      child: Container(
+        padding: EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 10,
+              offset: Offset(0, 3),
+            ),
+          ],
+        ),
+        child: Image.asset(
+          imagePath,
+          width: 50,
+          height: 50,
+        ),
+      ),
+    );
+  }
+}
