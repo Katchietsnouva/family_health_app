@@ -46,9 +46,10 @@ class NewestItemsWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
-                            "Have the best of out arts",
+                            "Hot Wall Neons",
                             style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
 
@@ -59,7 +60,7 @@ class NewestItemsWidget extends StatelessWidget {
                               child: Text(
                                 "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
                                 style: TextStyle(
-                                  fontSize: 10,
+                                  fontSize: 15,
                                 ),
                               ),
                             ),

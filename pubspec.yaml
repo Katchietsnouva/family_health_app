@@ -66,8 +66,10 @@ flutter:
     - images/popular/logo_1.png
     - images/popular/logo_2.png
     - images/popular/logo_3.png        
+    - images/newest/logo_1.png
+    - images/newest/logo_2.png
+    - images/newest/logo_3.png  
 
-    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
