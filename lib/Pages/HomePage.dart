@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ]
               ),
-            child: Padding: (
+            child: Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 10,
               ),
