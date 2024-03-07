@@ -15,7 +15,7 @@ class CategoriesWidget extends StatelessWidget {
               color: Colors.white,
             borderRadius: BorderRadius.circular(10),
             ),
-            child: Image.asset("images/"),
+            child: Image.asset("images/logo_1.png"),
           ),
           )
         ],),
