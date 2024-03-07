@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
             ),),
           ),
 
-
+          CategoriesWidget(),
         ],
       ),
     );
