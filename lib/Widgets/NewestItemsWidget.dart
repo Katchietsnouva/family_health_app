@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NewestItemsWidget extends StatelessWidget {
-//   final List<String> imagePaths =
-//       List.generate(3, (index) => "images/logo_${index + 1}.png");
+  final List<String> imagePaths =
+      List.generate(3, (index) => "images/newest/logo_${index + 1}.png");
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,34 @@ class NewestItemsWidget extends StatelessWidget {
             child: Row(children: [
               InkWell(
                 onTap: () {},
-                
+                child: Image.asset(
+                // imagePath,
+                "images/newest/logo_1.png",
+                width: 50,
+                height: 50,
+              ),
+              ),
+              Container(
+                width: 190,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    
+                    // Scrollable text
+                    Container(
+                      height: 50, // Set a fixed height or use constraints
+                      child: SingleChildScrollView(
+                        child: Text(
+                          "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                          style: TextStyle(
+                            fontSize: 10,
+                          ),
+                        ),
+                      ),
+                    ),
+
+                ],),
               )
             ],),
           ),)
