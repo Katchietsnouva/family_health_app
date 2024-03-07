@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../Widgets/AppBarWidget.dart';
+import '../Widgets/CategoriesWidget.dart';
 
 class HomePage extends StatelessWidget {
   @override
