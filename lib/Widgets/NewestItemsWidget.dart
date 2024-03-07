@@ -31,12 +31,15 @@ class NewestItemsWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     InkWell(
-                      onTap: () {},
-                      child: Image.asset(
+                      onTap: () {},                      
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Image.asset(
                         // imagePath,
                         "images/newest/logo_1.png",
-                        width: 50,
-                        height: 50,
+                        width: 120,
+                        height: 150,
+                        ),
                       ),
                     ),
                     Container(
