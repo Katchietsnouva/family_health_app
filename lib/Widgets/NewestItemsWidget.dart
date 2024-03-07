@@ -34,6 +34,7 @@ class NewestItemsWidget extends StatelessWidget {
                       onTap: () {},                      
                       child: Container(
                         alignment: Alignment.center,
+                        padding: EdgeInsets.all(8),
                         child: Image.asset(
                         // imagePath,
                         "images/newest/logo_1.png",
