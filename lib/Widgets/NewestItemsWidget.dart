@@ -10,61 +10,70 @@ class NewestItemsWidget extends StatelessWidget {
       // scrollDirection: Axis.horizontal,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        child: Column(children: [
-          Padding(padding: EdgeInsets.symmetric(vertical: 10),
-          child: Container(
-            width: 380,
-            height: 150,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 3,
-                  blurRadius: 10,
-                  offset: Offset(0, 3),
-                )
-              ]
-            ),
-            child: Row(children: [
-              InkWell(
-                onTap: () {},
-                child: Image.asset(
-                // imagePath,
-                "images/newest/logo_1.png",
-                width: 50,
-                height: 50,
-              ),
-              ),
-              Container(
-                width: 190,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                width: 380,
+                height: 150,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 3,
+                        blurRadius: 10,
+                        offset: Offset(0, 3),
+                      )
+                    ]),
+                child: Row(
                   children: [
-                    
-                    // Scrollable text
-                    Container(
-                      height: 50, // Set a fixed height or use constraints
-                      child: SingleChildScrollView(
-                        child: Text(
-                          "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
-                          style: TextStyle(
-                            fontSize: 10,
-                          ),
-                        ),
+                    InkWell(
+                      onTap: () {},
+                      child: Image.asset(
+                        // imagePath,
+                        "images/newest/logo_1.png",
+                        width: 50,
+                        height: 50,
                       ),
                     ),
+                    Container(
+                      width: 190,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            "Have the best of out arts",
+                            style: TextStyle(
+                              fontSize: 10,
+                            ),
+                          ),
 
-                ],),
-              )
-            ],),
-          ),)
-        ],
+                          // Scrollable text
+                          Container(
+                            height: 50, // Set a fixed height or use constraints
+                            child: SingleChildScrollView(
+                              child: Text(
+                                "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );
   }
-  
 }
