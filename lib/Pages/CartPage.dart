@@ -158,8 +158,10 @@ class CartPage extends StatelessWidget {
                           ],
                         ),
 
+
+
                         child: Column(
-                          children: [
+                          children: [     
                             Padding(
                               padding: EdgeInsets.symmetric(
                                 vertical: 10, 
@@ -167,8 +169,11 @@ class CartPage extends StatelessWidget {
                               child: Row(
                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
+
+
+                                  // TOTAL ITEMS
                                   Text(
-                                    "Items",
+                                    "Items: ",
                                     style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30,
@@ -181,6 +186,77 @@ class CartPage extends StatelessWidget {
                                     fontSize: 30,
                                     ),
                                   ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+
+
+
+                                  // TOTAL ITEMS
+                                  Text(
+                                    "Items: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+
+
+
+                                  // TOTAL ITEMS
+                                  Text(
+                                    "Items: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+
+
+
+                                  // TOTAL ITEMS
+                                  Text(
+                                    "Items: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+
+
+
+
+
                                 ],
                               ),
                             )
