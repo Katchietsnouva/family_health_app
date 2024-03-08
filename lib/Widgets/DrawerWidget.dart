@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -43,13 +44,13 @@ class DrawerWidget extends StatelessWidget {
             ),
           ),
 
-                    // LIST TILE
+                    // LIST TILE PERSON
           ListTile(
-            leading: Icon(Icons.home,
+            leading: Icon(Icons.person,
             color: Colors.red,
             ),
             title: Text(
-              "Home",
+              "My account",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
@@ -59,11 +60,11 @@ class DrawerWidget extends StatelessWidget {
 
                     // LIST TILE
           ListTile(
-            leading: Icon(Icons.home,
+            leading: Icon(CupertinoIcons.cart_fill,
             color: Colors.red,
             ),
             title: Text(
-              "Home",
+              "My orders",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
@@ -73,11 +74,11 @@ class DrawerWidget extends StatelessWidget {
 
                     // LIST TILE
           ListTile(
-            leading: Icon(Icons.home,
+            leading: Icon(CupertinoIcons.heart_fill,
             color: Colors.red,
             ),
             title: Text(
-              "Home",
+              "My wish list",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
@@ -87,11 +88,11 @@ class DrawerWidget extends StatelessWidget {
 
                     // LIST TILE
           ListTile(
-            leading: Icon(Icons.home,
+            leading: Icon(CupertinoIcons.settings_solid,
             color: Colors.red,
             ),
             title: Text(
-              "Home",
+              "Settings",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
@@ -101,11 +102,11 @@ class DrawerWidget extends StatelessWidget {
 
                     // LIST TILE
           ListTile(
-            leading: Icon(Icons.home,
+            leading: Icon(Icons.exit_to_app,
             color: Colors.red,
             ),
             title: Text(
-              "Home",
+              "Log out",
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
