@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../Widgets/DrawerWidget.dart';
 import '../Widgets/SearchWidget.dart';
 import '../Widgets/AppBarWidget.dart';
 import '../Widgets/CategoriesWidget.dart';
@@ -63,6 +64,7 @@ class HomePage extends StatelessWidget {
       ),
 
       // DRAWER
+      drawer: DrawerWidget(),
       floatingActionButton: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -74,8 +76,20 @@ class HomePage extends StatelessWidget {
               blurRadius: 10,
               offset: Offset(0, 3),
             )
-          ],),
+          ]),
+          child: FloatingActionButton(
+            onPressed: () {},
+            child: Icon(
+              CupertinoIcons.cart, 
+              size: 28,
+              color: Colors.red,
+              ),
+              backgroundColor: Colors.white,
+          ),
           
+
+            
+
       ),
     );
   }
