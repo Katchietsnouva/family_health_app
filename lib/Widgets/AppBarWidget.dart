@@ -6,12 +6,14 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-      child: Row( 
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // children: [InkWell(
         children: [
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Scaffold.of(context).openDrawer();
+            },
             child: Container(
               padding: EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -48,9 +50,8 @@ class AppBarWidget extends StatelessWidget {
               child: Icon(Icons.notifications),
             ),
           ),
-
-        ],),
+        ],
+      ),
     );
   }
 }
-
