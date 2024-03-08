@@ -107,6 +107,7 @@ class ItemsPage extends StatelessWidget {
                 vertical: 10,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Delivery Time", 
                   style: TextStyle(
