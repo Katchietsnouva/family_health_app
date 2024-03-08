@@ -33,11 +33,15 @@ class CartPage extends StatelessWidget {
                     ),
                   ),
 
+
+
+                  // SINGLE ITEM 
+                  for (int i = 0; i < 10; i++)
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 9),
                     child: Container(
                       width:380, 
-                      height: 100,
+                      height: 120,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -103,7 +107,7 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(vertical: 5),
+                            padding: EdgeInsets.symmetric(vertical: 10),
                             child: Container(
                               padding: EdgeInsets.all(5),
                               decoration: BoxDecoration(
