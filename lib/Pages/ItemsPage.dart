@@ -92,7 +92,7 @@ class ItemsPage extends StatelessWidget {
                 vertical: 10,
               ),
               child: 
-              Text("Hot Deal", 
+              Text("The error in your code is caused by the Arc widget from clippy_flutter being placed inside a ListView. The Arc widget tries to take infinite height, but ListView gives its children an infinite height as well. This results in a conflict. To fix this issue, you can wrap the Arc widget with a container and set a specific height for it. Here's an example:", 
                 style: TextStyle(
                   fontSize: 15,
                   color: Colors.red,
