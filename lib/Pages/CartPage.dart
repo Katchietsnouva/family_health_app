@@ -31,6 +31,35 @@ class CartPage extends StatelessWidget {
                       ),
                     ),
                   ),
+
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      height:380, 
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 3,
+                            blurRadius: 10,
+                            offset: Offset(0, 3),
+                          )
+                        ],
+                      ),
+                      child: SingleChildScrollView(
+                        child: Text(
+                          "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  
                 ],
               ),
             ),
