@@ -104,14 +104,11 @@ class NewestItemsWidget extends StatelessWidget {
                         Icon(Icons.favorite_border, color: Colors.red, size: 26),
                         Icon(CupertinoIcons.cart, color: Colors.red, size: 26),
                       ],
-                    ),),
-                
-                    
+                    ),),                                    
                   ],
                 ),
-              ),
-              
-            )
+              ),              
+            ),
           ],
         ),
       ),

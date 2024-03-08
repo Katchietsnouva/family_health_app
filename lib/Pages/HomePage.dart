@@ -61,6 +61,21 @@ class HomePage extends StatelessWidget {
           NewestItemsWidget(),
         ],
       ),
+
+      // DRAWER
+      floatingActionButton: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 3,
+              blurRadius: 10,
+              offset: Offset(0, 3),
+            )
+          ],),
+      ),
     );
   }
 }
