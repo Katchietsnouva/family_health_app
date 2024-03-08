@@ -168,6 +168,13 @@ class CartPage extends StatelessWidget {
                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
+                                    "Items",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
                                     "2",
                                     style: TextStyle(
                                     fontWeight: FontWeight.bold,
