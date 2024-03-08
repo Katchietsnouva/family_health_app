@@ -1,4 +1,5 @@
 import 'package:family_health_app/Widgets/AppBarWidget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:clippy_flutter/clippy_flutter.dart';
@@ -95,11 +96,38 @@ class ItemsPage extends StatelessWidget {
               Text("The error in your code is caused by the Arc widget from clippy_flutter being placed inside a ListView. The Arc widget tries to take infinite height, but ListView gives its children an infinite height as well. This results in a conflict. To fix this issue, you can wrap the Arc widget with a container and set a specific height for it. Here's an example:", 
                 style: TextStyle(
                   fontSize: 15,
-                  color: Colors.red,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontWeight: FontWeight.normal,
                 ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: 10,
+              ),
+              child: Row(
+                children: [
+                  Text("Delivery Time", 
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.justify,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 5
+                ), 
+                child: Icon(
+                  CupertinoIcons.clock,
+                ),
+              )
+            ],
+            )
+              
+          ),
         ]),
       ),
     );
