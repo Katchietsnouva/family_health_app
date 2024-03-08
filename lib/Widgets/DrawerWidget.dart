@@ -10,9 +10,19 @@ class DrawerWidget extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
+            padding: EdgeInsets.zero,
             child: UserAccountsDrawerHeader(
-              accountName: Text("Katchiets Nouva"),
-              accountEmail: Text("philipaswa01@gmail.com"),
+              accountName: Text("Katchiets Nouva",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+              accountEmail: Text("philipaswa01@gmail.com",
+              style: TextStyle(
+                fontSize: 15,
+              ),
+              ),
             ),
           ),
         ]
