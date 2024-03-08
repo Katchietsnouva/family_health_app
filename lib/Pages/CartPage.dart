@@ -283,6 +283,36 @@ class CartPage extends StatelessWidget {
                               ),
                             ),
 
+                            // GRAND TOTAL 
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 10, 
+                              ),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Total: ",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$80",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 1, // Adjust the height of the line as needed
+                              color: Colors.black,
+                            ),
+
+
 
 
                             
