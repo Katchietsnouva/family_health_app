@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:clippy_flutter/clippy_flutter.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
+import '../Widgets/DrawerWidget.dart';
+import '../Widgets/ItemBottomNavBar.dart';
+
 class ItemsPage extends StatelessWidget {
   final List<String> imagePaths =
       List.generate(3, (index) => "images/newest/logo_${index + 1}.png");
@@ -143,6 +146,7 @@ class ItemsPage extends StatelessWidget {
         ]),
       ),
       bottomNavigationBar: ItemBottomNavBar(),
+      drawer: DrawerWidget(),
     );
   }
 }
