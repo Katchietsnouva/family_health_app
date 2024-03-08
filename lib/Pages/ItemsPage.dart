@@ -71,6 +71,7 @@ class ItemsPage extends StatelessWidget {
                 bottom: 20,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Hot Deal", 
                     style: TextStyle(
@@ -115,16 +116,26 @@ class ItemsPage extends StatelessWidget {
                     fontStyle: FontStyle.italic,
                   ),
                   textAlign: TextAlign.justify,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 5
-                ), 
-                child: Icon(
-                  CupertinoIcons.clock,
-                ),
-              )
-            ],
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 5
+                    ), 
+                    child: Icon(
+                      CupertinoIcons.clock,
+                    ),
+                  ),
+                  Text("30 Minutes", 
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.justify,
+                  ),
+                  
+              ],
             )
               
           ),
