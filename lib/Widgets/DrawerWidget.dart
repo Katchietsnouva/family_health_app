@@ -28,6 +28,19 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
           ),
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+          ),
         ]
       ),
     );
