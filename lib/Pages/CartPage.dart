@@ -59,7 +59,38 @@ class CartPage extends StatelessWidget {
                             width: 120,
                             height: 150,
                             ),
-                          )
+                          ),
+                          Container(
+                            width: 170,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(
+                                  "Hot Wall Neons",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+
+                                // Scrollable text
+                                Container(
+                                  height:80, // Set a fixed height or use constraints
+                                  width: 170,
+                                  child: SingleChildScrollView(
+                                    child: Text(
+                                      "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          
                         ],
                       ),
                       
