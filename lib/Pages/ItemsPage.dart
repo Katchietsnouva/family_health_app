@@ -71,14 +71,33 @@ class ItemsPage extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Text("\$10", 
+                  Text("Hot Deal", 
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.red,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  Container(
+                    width: 90, 
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(10)),)
                 ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: 10,
+              ),
+              child: 
+              Text("Hot Deal", 
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
         ]),
