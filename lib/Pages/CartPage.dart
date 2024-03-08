@@ -158,10 +158,12 @@ class CartPage extends StatelessWidget {
                           ],
                         ),
 
-
-
                         child: Column(
-                          children: [     
+                          children: [
+                            
+
+
+                            // TOTAL ITEMS
                             Padding(
                               padding: EdgeInsets.symmetric(
                                 vertical: 10, 
@@ -169,9 +171,6 @@ class CartPage extends StatelessWidget {
                               child: Row(
                                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-
-
-                                  // TOTAL ITEMS
                                   Text(
                                     "Items: ",
                                     style: TextStyle(
@@ -189,77 +188,104 @@ class CartPage extends StatelessWidget {
                                   Divider(
                                     color: Colors.black,
                                   )
-
-
-
-                                  // TOTAL ITEMS
-                                  Text(
-                                    "Items: ",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Text(
-                                    "2",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
-
-
-
-                                  // TOTAL ITEMS
-                                  Text(
-                                    "Items: ",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Text(
-                                    "2",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
-
-
-
-                                  // TOTAL ITEMS
-                                  Text(
-                                    "Items: ",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Text(
-                                    "2",
-                                    style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30,
-                                    ),
-                                  ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
-
-
-
-
-
                                 ],
                               ),
-                            )
+                            ),
+
+
+                            // TOTAL ITEM PRICE
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 10, 
+                              ),
+                              child: Row(
+                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Sub-Total: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$60",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+                                ],
+                              ),
+                            ),
+
+
+                            // DELIVERY PRICE
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 10, 
+                              ),
+                              child: Row(
+                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Delivery: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$20",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+                                ],
+                              ),
+                            ),
+
+
+
+                            // GRAND TOTAL 
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 10, 
+                              ),
+                              child: Row(
+                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Total: ",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$80",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                  Divider(
+                                    color: Colors.black,
+                                  )
+                                ],
+                              ),
+                            ),
+
+
+
+                            
                           ],
                         ),
                     ),
