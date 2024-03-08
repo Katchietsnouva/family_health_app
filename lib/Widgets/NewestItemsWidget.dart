@@ -23,7 +23,7 @@ class NewestItemsWidget extends StatelessWidget {
               child: Container(
                 width: 380,
                 height: 150,
-                padding: EdgeInsets.all(8),
+                // padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
@@ -41,7 +41,7 @@ class NewestItemsWidget extends StatelessWidget {
                       onTap: () {},                      
                       child: Container(
                         alignment: Alignment.center,
-                        // padding: EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Image.asset(
                         // imagePath,
                         "images/newest/logo_1.png",
@@ -51,7 +51,7 @@ class NewestItemsWidget extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 190,
+                      width: 170,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,20 +59,20 @@ class NewestItemsWidget extends StatelessWidget {
                           Text(
                             "Hot Wall Neons",
                             style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 15,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
 
                           // Scrollable text
                           Container(
-                            height:60, // Set a fixed height or use constraints
-                            width: 60,
+                            height:80, // Set a fixed height or use constraints
+                            width: 170,
                             child: SingleChildScrollView(
                               child: Text(
                                 "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
                                 style: TextStyle(
-                                  fontSize: 5,
+                                  fontSize: 12,
                                 ),
                               ),
                             ),
@@ -89,7 +89,7 @@ class NewestItemsWidget extends StatelessWidget {
                           ),
 
                           Text("\$10", style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 15,
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
                           ),),
