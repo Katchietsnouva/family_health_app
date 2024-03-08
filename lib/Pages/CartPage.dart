@@ -41,7 +41,7 @@ class CartPage extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 9),
                     child: Container(
                       width:380, 
-                      height: 120,
+                      height: 160,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -133,17 +133,54 @@ class CartPage extends StatelessWidget {
                                 ),
                               ],
                             ),)
-                          ),
-
-
-
-                          
+                          ),                
                         ],
-                      ),
-                      
+                      ),                      
                     ),
                   ),
-                  
+
+
+
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 3,
+                              blurRadius: 10,
+                              offset: Offset(0, 3),
+                            )
+                          ],
+                        ),
+
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                vertical: 10, 
+                              ),
+                              child: Row(
+                                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                    ),
+                  ),
                 ],
               ),
             ),
