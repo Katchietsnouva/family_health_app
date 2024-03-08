@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -32,14 +33,14 @@ class NewestItemsWidget extends StatelessWidget {
                         blurRadius: 10,
                         offset: Offset(0, 3),
                       )
-                    ]),
+                    ],),
                 child: Row(
                   children: [
                     InkWell(
                       onTap: () {},                      
                       child: Container(
                         alignment: Alignment.center,
-                        padding: EdgeInsets.all(8),
+                        // padding: EdgeInsets.all(8),
                         child: Image.asset(
                         // imagePath,
                         "images/newest/logo_1.png",
@@ -57,7 +58,7 @@ class NewestItemsWidget extends StatelessWidget {
                           Text(
                             "Hot Wall Neons",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 10,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -65,11 +66,12 @@ class NewestItemsWidget extends StatelessWidget {
                           // Scrollable text
                           Container(
                             height:60, // Set a fixed height or use constraints
+                            width: 60,
                             child: SingleChildScrollView(
                               child: Text(
                                 "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 5,
                                 ),
                               ),
                             ),
@@ -84,17 +86,30 @@ class NewestItemsWidget extends StatelessWidget {
                             itemBuilder: (context, _) => Icon(Icons.star, color: Colors.red),
                             onRatingUpdate: (index){},
                           ),
+
                           Text("\$10", style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 10,
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
                           ),),
+                          
                         ],
                       ),
-                    )
+                    ),
+                    Padding(padding: EdgeInsets.symmetric(vertical: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Icon(Icons.favorite_border, color: Colors.red, size: 26),
+                        Icon(CupertinoIcons.cart, color: Colors.red, size: 26),
+                      ],
+                    ),),
+                
+                    
                   ],
                 ),
               ),
+              
             )
           ],
         ),
