@@ -64,7 +64,7 @@ class NewestItemsWidget extends StatelessWidget {
 
                           // Scrollable text
                           Container(
-                            height: 100, // Set a fixed height or use constraints
+                            height:60, // Set a fixed height or use constraints
                             child: SingleChildScrollView(
                               child: Text(
                                 "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
@@ -84,6 +84,11 @@ class NewestItemsWidget extends StatelessWidget {
                             itemBuilder: (context, _) => Icon(Icons.star, color: Colors.red),
                             onRatingUpdate: (index){},
                           ),
+                          Text("\$10", style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.red,
+                            fontWeight: FontWeight.bold,
+                          ),),
                         ],
                       ),
                     )
