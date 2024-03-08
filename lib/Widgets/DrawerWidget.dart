@@ -23,6 +23,9 @@ class DrawerWidget extends StatelessWidget {
                 fontSize: 15,
               ),
               ),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage("images/profileImages/avatar_1.png"),
+              ),
             ),
           ),
         ]
