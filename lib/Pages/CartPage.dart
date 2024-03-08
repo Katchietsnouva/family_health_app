@@ -185,11 +185,12 @@ class CartPage extends StatelessWidget {
                                     fontSize: 30,
                                     ),
                                   ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
                                 ],
                               ),
+                            ),
+                            Container(
+                              height: 1, // Adjust the height of the line as needed
+                              color: Colors.black,
                             ),
 
 
@@ -215,11 +216,12 @@ class CartPage extends StatelessWidget {
                                     fontSize: 30,
                                     ),
                                   ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
                                 ],
                               ),
+                            ),
+                            Container(
+                              height: 1, // Adjust the height of the line as needed
+                              color: Colors.black,
                             ),
 
 
@@ -245,11 +247,12 @@ class CartPage extends StatelessWidget {
                                     fontSize: 30,
                                     ),
                                   ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
                                 ],
                               ),
+                            ),
+                            Container(
+                              height: 1, // Adjust the height of the line as needed
+                              color: Colors.black,
                             ),
 
 
@@ -274,34 +277,6 @@ class CartPage extends StatelessWidget {
                                     style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30,
-                                    ),
-                                  ),
-                                  Divider(
-                                    color: Colors.black,
-                                  )
-                                ],
-                              ),
-                            ),
-
-                            // GRAND TOTAL 
-                            Padding(
-                              padding: EdgeInsets.symmetric(
-                                vertical: 10, 
-                              ),
-                              child: Row(
-                                children: [
-                                  Text(
-                                    "Total: ",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30,
-                                    ),
-                                  ),
-                                  Text(
-                                    "\$80",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30,
                                     ),
                                   ),
                                 ],
