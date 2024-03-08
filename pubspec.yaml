@@ -72,7 +72,8 @@ flutter:
     - images/newest/logo_2.png
     - images/newest/logo_3.png
     - images/profileImages/avatar_1.png  
-
+    - images/orders/order_1.png
+  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

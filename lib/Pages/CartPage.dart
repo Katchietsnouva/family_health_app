@@ -35,8 +35,8 @@ class CartPage extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 9),
                     child: Container(
-                      height:380, 
-                      width: 100,
+                      width:380, 
+                      height: 100,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
@@ -49,14 +49,20 @@ class CartPage extends StatelessWidget {
                           )
                         ],
                       ),
-                      child: SingleChildScrollView(
-                        child: Text(
-                          "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
-                          style: TextStyle(
-                            fontSize: 12,
-                          ),
-                        ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                            // imagePath,
+                            "images/orders/order_1.png",
+                            width: 120,
+                            height: 150,
+                            ),
+                          )
+                        ],
                       ),
+                      
                     ),
                   ),
                   
