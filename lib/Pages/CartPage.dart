@@ -1,4 +1,5 @@
 import 'package:family_health_app/Widgets/AppBarWidget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartPage extends StatelessWidget {
@@ -101,9 +102,37 @@ class CartPage extends StatelessWidget {
                               ],
                             ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 5),
+                            child: Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Column(
+                              children: [
+                                Icon(
+                                  CupertinoIcons.minus,
+                                  color: Colors.white,
+                                ),
+                                Text(
+                                  "2",
+                                  style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30,
+                                ),
+                                ),
+                                Icon(
+                                  CupertinoIcons.minus,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),)
+                          ),
 
 
-                          
+
                           
                         ],
                       ),
