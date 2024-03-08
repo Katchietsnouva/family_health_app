@@ -25,40 +25,62 @@ class ItemsPage extends StatelessWidget {
                 height: 300 ,
               ),
             ),
-            Arc(
-              edge: Edge.TOP,
-              arcType: ArcType.CONVEY,
-              height: 30, 
-              child: Container(
-                width: double.infinity,
-                color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    RatingBar.builder(
-                      initialRating: 4,
-                      minRating: 1,
-                      direction:Axis.horizontal, 
-                      itemCount: 5,
-                      itemSize: 18,
-                      itemPadding: EdgeInsets.symmetric(horizontal: 4),
-                      itemBuilder: (context, _) => Icon(Icons.star, color: Colors.red),
-                      onRatingUpdate: (index){},
+            Container(
+              height: 100,
+              child: Arc(
+                edge: Edge.TOP,
+                arcType: ArcType.CONVEY,
+                height: 30, 
+                child: Container(
+                  width: double.infinity,
+                  color: Colors.white,
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 60, bottom: 10),
+                    // padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        RatingBar.builder(
+                          initialRating: 4,
+                          minRating: 1,
+                          direction:Axis.horizontal, 
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(Icons.star, color: Colors.red),
+                          onRatingUpdate: (index){},
+                        ),
+                        Text("\$10", 
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        ),
+                                      
+                      ],
                     ),
-                    Text("\$10", 
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                top: 10,
+                bottom: 20,
+              ),
+              child: Row(
+                children: [
+                  Text("\$10", 
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.red,
                       fontWeight: FontWeight.bold,
-                    ),),
-                    
-
-
-                  ],
-                ),
+                    ),
+                  ),
+                ],
               ),
             ),
-
         ]),
       ),
     );
