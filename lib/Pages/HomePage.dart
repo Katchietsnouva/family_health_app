@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
 
           // SEARCH
           SearchWidget(),
-          
+
           // CATEGORY
           Padding(
             padding: EdgeInsets.only(top: 20, left: 10),
@@ -67,29 +67,27 @@ class HomePage extends StatelessWidget {
       drawer: DrawerWidget(),
       floatingActionButton: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
-              spreadRadius: 3,
-              blurRadius: 10,
-              offset: Offset(0, 3),
-            )
-          ]),
-          child: FloatingActionButton(
-            onPressed: () {},
-            child: Icon(
-              CupertinoIcons.cart, 
-              size: 28,
-              color: Colors.red,
-              ),
-              backgroundColor: Colors.white,
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 3,
+                blurRadius: 10,
+                offset: Offset(0, 3),
+              )
+            ]),
+        child: FloatingActionButton(
+          onPressed: () {
+            Navigator.pushNamed(context, "cartPage");
+          },
+          child: Icon(
+            CupertinoIcons.cart,
+            size: 28,
+            color: Colors.red,
           ),
-          
-
-            
-
+          backgroundColor: Colors.white,
+        ),
       ),
     );
   }
