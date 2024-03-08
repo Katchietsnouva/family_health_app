@@ -23,6 +23,7 @@ class NewestItemsWidget extends StatelessWidget {
               child: Container(
                 width: 380,
                 height: 150,
+                padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
