@@ -76,7 +76,7 @@ class CartPage extends StatelessWidget {
 
                                 // Scrollable text
                                 Container(
-                                  height:80, // Set a fixed height or use constraints
+                                  height:40, // Set a fixed height or use constraints
                                   width: 170,
                                   child: SingleChildScrollView(
                                     child: Text(
@@ -87,9 +87,23 @@ class CartPage extends StatelessWidget {
                                     ),
                                   ),
                                 ),
+
+                                Text(
+                                  "\$10",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+
+
                               ],
                             ),
                           ),
+
+
+                          
                           
                         ],
                       ),
