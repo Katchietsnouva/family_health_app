@@ -142,6 +142,7 @@ class ItemsPage extends StatelessWidget {
           ),
         ]),
       ),
+      bottomNavigationBar: ItemBottomNavBar(),
     );
   }
 }
