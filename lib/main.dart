@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget{
       title: "Family Health App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.blueGrey[400]
+        scaffoldBackgroundColor: Colors.blueGrey[400],
       ),
       routes: {
         "/" : (context) => HomePage(),
