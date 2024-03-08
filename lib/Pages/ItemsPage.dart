@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class itemsPage extends StatelessWidget {
+class ItemsPage extends StatelessWidget {
   final List<String> imagePaths =
       List.generate(3, (index) => "images/newest/logo_${index + 1}.png");
 
@@ -11,7 +11,7 @@ class itemsPage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         child: ListView(children: [
-          
+
         ]),
       ),
     );
