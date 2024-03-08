@@ -28,6 +28,8 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
           ),
+
+          // LIST TILE HOME
           ListTile(
             leading: Icon(Icons.home,
             color: Colors.red,
@@ -39,8 +41,232 @@ class DrawerWidget extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
           ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+                    // LIST TILE
+          ListTile(
+            leading: Icon(Icons.home,
+            color: Colors.red,
+            ),
+            title: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+
         ]
       ),
     );
