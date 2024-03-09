@@ -48,13 +48,13 @@ class LocationPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        width: 170,
+                        width: 100,
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Text(
-                                "Hot Wall Neons",
+                                "Mt. Kenya Slopes Family Clinic",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,

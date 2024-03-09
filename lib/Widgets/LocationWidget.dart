@@ -97,8 +97,8 @@ class CategoryItem extends StatelessWidget {
               ),
               child: Image.asset(
                 imagePath,
-                width: 100,
-                height: 100,
+                width: 120,
+                height: 120,
               ),
             ),
           ),
