@@ -17,7 +17,9 @@ class LocationPage extends StatelessWidget {
             
 
             // SINGLE ITEM
-            for (int i = 0; i < 10; i++)
+            // for (int i = 0; i < 10; i++)
+            // Display all items
+            for (int i = 0; i < imagePaths.length; i++)
             Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
               child: Container(
@@ -43,7 +45,7 @@ class LocationPage extends StatelessWidget {
                         alignment: Alignment.center,
                         padding: EdgeInsets.all(8),
                         child: Image.asset(
-                        imagePaths as String,
+                        imagePaths[i],
                         // "images/newest/logo_1.png",
                         width: 120,
                         height: 150,
