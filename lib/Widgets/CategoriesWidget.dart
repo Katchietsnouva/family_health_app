@@ -259,9 +259,7 @@
 
 
 
-git add .
-git commit -m "commit 1.01"
-git push origin main
+
 
 
 import 'package:flutter/material.dart';
@@ -296,7 +294,12 @@ class CategoriesWidget extends StatelessWidget {
               caption: captions[index],
               onTap: () {
                 // Handle the tap event for the specific category
-                print('Tapped on ${captions[index]}');
+                // print('Tapped on ${captions[index]}');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
+                );
+                // Navigator.pushNamed(context, "itemPage");
                 // You can navigate to a new screen or perform other actions here
               },
             ),
@@ -351,6 +354,25 @@ class CategoryItem extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+
+class ServicePage extends StatelessWidget {
+  final String serviceName;
+
+  ServicePage(this.serviceName);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(serviceName),
+      ),
+      body: Center(
+        child: Text('This is the page for $serviceName'),
       ),
     );
   }
