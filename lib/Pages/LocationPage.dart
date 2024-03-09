@@ -42,7 +42,7 @@ class LocationPage extends StatelessWidget {
                           padding: EdgeInsets.all(8),
                           child: Image.asset(
                             imagePaths[i],
-                            width: 2000,
+                            width: 200,
                             height: 200,
                           ),
                         ),
