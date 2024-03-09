@@ -248,6 +248,7 @@ import '../Widgets/ServicesWidget.dart';
 import '../Widgets/LocationWidget.dart'; 
 import '../Widgets/PopularItemsWidget.dart';
 import '../Widgets/NewestItemsWidget.dart';
+import '../Widgets/TimeWidget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -279,7 +280,8 @@ class HomePage extends StatelessWidget {
               tabs: [
                 Tab(text: 'Services'),  // First tab
                 Tab(text: 'Location'),  // Second tab
-              ],
+                Tab(text: 'Time'),  // 3rd tab
+              ]
             ),
 
             // TAB BAR VIEW
@@ -292,6 +294,8 @@ class HomePage extends StatelessWidget {
 
                   // LOCATION TAB (Tab 2)
                   LocationWidget(),
+                  
+                  TimeWidget(),
                 ],
               ),
             ),
