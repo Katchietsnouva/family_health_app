@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Service_5 extends StatelessWidget {
+class Service_6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    String pageIdentification = "STI Screening";
+    String pageIdentification = "Cervical Cancer Screening";
     return Scaffold(
       appBar: AppBar(
         title: Text(pageIdentification),

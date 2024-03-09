@@ -5,6 +5,15 @@ import 'Pages/HomePage.dart';
 import 'Pages/ItemsPage.dart';
 
 import 'Services/GeneralConsultation.dart';
+import 'Services/Service_2.dart';
+import 'Services/Service_3.dart';
+import 'Services/Service_4.dart';
+import 'Services/Service_5.dart';
+import 'Services/Service_6.dart';
+import 'Services/Service_7.dart';
+import 'Services/Service_8.dart';
+import 'Services/Service_9.dart';
+import 'Services/Service_10.dart';
 
 void main(){
   runApp(MyApp());
@@ -25,7 +34,7 @@ class MyApp extends StatelessWidget{
         "itemPage" : (context) => ItemsPage(),
         "General Consultation" : (context) => GeneralConsultation(),
         "Family Planning and Contraceptives"  : (context) => Service_2(),
-        "Ante-natal and Post natal Care" : (context) =>  Service_3),
+        "Ante-natal and Post natal Care" : (context) =>  Service_3(),
         "HIV Counseling and Testing" : (context) => Service_4(),
         "STI Screening" : (context) => Service_5(),
         "Cervical Cancer Screening" : (context) => Service_6(),
