@@ -74,6 +74,21 @@ flutter:
     - images/newest/logo_3.png
     - images/profileImages/avatar_1.png  
     - images/orders/order_1.png
+    - images/location/location_1.jpeg
+    - images/location/location_2.jpeg
+    - images/location/location_3.jpeg
+    - images/location/location_4.jpeg
+    - images/location/location_5.jpeg
+    - images/location/location_6.jpeg
+    - images/location/location_7.jpeg
+    - images/location/location_8.jpeg
+    - images/location/location_9.jpeg
+    - images/location/location_10.jpeg
+    - images/location/location_11.jpeg
+    - images/location/location_12.jpeg
+    - images/location/location_13.jpeg
+    - images/location/location_14.jpeg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
