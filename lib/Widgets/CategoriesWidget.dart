@@ -252,7 +252,7 @@ class CategoryItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: Container(
-        padding: EdgeInsets.all(2),
+        // padding: EdgeInsets.all(2),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
