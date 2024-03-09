@@ -266,7 +266,7 @@
 
 import 'package:flutter/material.dart';
 
-class CategoriesWidget extends StatelessWidget {
+class ServicesWidget extends StatelessWidget {
   final List<String> imagePaths =
       List.generate(10, (index) => "images/services/service_${index + 1}.webp");
 
