@@ -23,19 +23,12 @@ import 'package:flutter/material.dart';
 
 class LocationWidget extends StatelessWidget {
   final List<String> imagePaths =
-      List.generate(10, (index) => "images/location/location_${index + 1}.jpeg");
+      List.generate(2, (index) => "images/location/location_${index + 1}.jpeg");
 
   final List<String> captions = [
-    "General Consultation",
-    "Family Planning and Contraceptives",
-    "Ante-natal and Post natal Care",
-    "HIV Counseling and Testing",
-    "STI Screening",
-    "Cervical Cancer Screening",
-    "Laboratory Services and Ultrasound",
-    "Pharmacy and Nutrition",
-    "Pregnancy Crisis Counseling",
-    "Post Abortion Care"
+    "Physical location",
+    "Find on Google maps",
+
   ];
 
   @override
@@ -104,8 +97,8 @@ class CategoryItem extends StatelessWidget {
               ),
               child: Image.asset(
                 imagePath,
-                width: 100,
-                height: 100,
+                width: 150,
+                height: 150,
               ),
             ),
           ),

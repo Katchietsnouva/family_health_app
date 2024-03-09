@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'Pages/CartPage.dart';
 import 'Pages/HomePage.dart';
 import 'Pages/ItemsPage.dart';
+import 'Pages/LocationPage.dart';
+
 
 import 'Services/GeneralConsultation.dart';
 import 'Services/Service_2.dart';
@@ -32,6 +34,9 @@ class MyApp extends StatelessWidget{
         "/" : (context) => HomePage(),
         "cartPage" : (context) => CartPage(),
         "itemPage" : (context) => ItemsPage(),
+        "Physical location" : (context) => LocationPage(),
+
+        // SERVICES
         "General Consultation" : (context) => GeneralConsultation(),
         "Family Planning and Contraceptives"  : (context) => Service_2(),
         "Ante-natal and Post natal Care" : (context) =>  Service_3(),
@@ -42,6 +47,9 @@ class MyApp extends StatelessWidget{
         "Pharmacy and Nutrition" : (context) => Service_8(),
         "Pregnancy Crisis Counseling" : (context) => Service_9(),
         "Post Abortion Care" : (context) => Service_10(),
+
+        // LOCATION
+        
         // for (int i = 0; i < captions.length; i++)
         //   "${captions[i]}$i": (context) => ServicePage(i + 1), // Assuming ServicePage accepts an index
       },
