@@ -4,7 +4,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class LocationPage extends StatelessWidget {
   final List<String> imagePaths =
-      List.generate(3, (index) => "images/location/location_${index + 1}.jpeg");
+      List.generate(14, (index) => "images/location/location_${index + 1}.jpeg");
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +43,8 @@ class LocationPage extends StatelessWidget {
                         alignment: Alignment.center,
                         padding: EdgeInsets.all(8),
                         child: Image.asset(
-                        // imagePath,
-                        "images/newest/logo_1.png",
+                        imagePaths as String,
+                        // "images/newest/logo_1.png",
                         width: 120,
                         height: 150,
                         ),
@@ -63,3 +63,17 @@ class LocationPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                        ]
+                      ),
+                    ),
+                  ]
+                ),
+              ),
+            ),
+          ]
+        ),
+      ),
+    );
+  }
+}
+
