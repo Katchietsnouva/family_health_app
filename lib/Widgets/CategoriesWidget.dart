@@ -249,32 +249,22 @@
 //   }
 // }
 
-
-
-
-
-
 // overflow: TextOverflow.ellipsis, // Adjust overflow behavior
-
-
-
-
-
-
 
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  final List<String> imagePaths = List.generate(10, (index) => "images/services/service_${index + 1}.webp");
+  final List<String> imagePaths =
+      List.generate(10, (index) => "images/services/service_${index + 1}.webp");
 
   final List<String> captions = [
     "General Consultation",
-    "Family Planning",
-    "Prenatal and Postnatal Care",
-    "HIV Counseling",
+    "Family Planning and Contraceptives",
+    "Ante-natal and Post natal Care",
+    "HIV Counseling and Testing",
     "STI Screening",
     "Cervical Cancer Screening",
-    "Ultrasound",
+    "Laboratory Services and Ultrasound",
     "Pharmacy and Nutrition",
     "Pregnancy Crisis Counseling",
     "Post Abortion Care"
@@ -300,12 +290,15 @@ class CategoriesWidget extends StatelessWidget {
                 //   MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
                 // );
                 // Navigator.pushNamed(context, "itemPage");
-                Navigator.pushNamed(context, captions[index],);
+                Navigator.pushNamed(
+                  context,
+                  captions[index],
+                );
                 // You can navigate to a new screen or perform other actions here
               },
             ),
           ),
-        ), 
+        ),
       ),
     );
   }

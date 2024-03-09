@@ -23,7 +23,16 @@ class MyApp extends StatelessWidget{
         "/" : (context) => HomePage(),
         "cartPage" : (context) => CartPage(),
         "itemPage" : (context) => ItemsPage(),
-        "General Consultation" : (context) => GeneralConsultation(), 
+        "General Consultation" : (context) => GeneralConsultation(),
+        "Family Planning and Contraceptives"  : (context) => Service_2(),
+        "Ante-natal and Post natal Care" : (context) =>  Service_3),
+        "HIV Counseling and Testing" : (context) => Service_4(),
+        "STI Screening" : (context) => Service_5(),
+        "Cervical Cancer Screening" : (context) => Service_6(),
+        "Laboratory Services and Ultrasound" : (context)  => Service_7(),
+        "Pharmacy and Nutrition" : (context) => Service_8(),
+        "Pregnancy Crisis Counseling" : (context) => Service_9(),
+        "Post Abortion Care" : (context) => Service_10(),
         // for (int i = 0; i < captions.length; i++)
         //   "${captions[i]}$i": (context) => ServicePage(i + 1), // Assuming ServicePage accepts an index
       },
