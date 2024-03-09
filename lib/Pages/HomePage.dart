@@ -245,7 +245,7 @@ import '../Widgets/DrawerWidget.dart';
 import '../Widgets/SearchWidget.dart';
 import '../Widgets/AppBarWidget.dart';
 import '../Widgets/ServicesWidget.dart';
-import '../Widgets/LocationWidget.dart';  /
+import '../Widgets/LocationWidget.dart'; 
 import '../Widgets/PopularItemsWidget.dart';
 import '../Widgets/NewestItemsWidget.dart';
 
@@ -284,7 +284,7 @@ class HomePage extends StatelessWidget {
 
             // TAB BAR VIEW
             Container(
-              height: 0,  // Set the height for tab content
+              height: 100,  // Set the height for tab content
               child: TabBarView(
                 children: [
                   // SERVICE CATEGORIES (Tab 1)
