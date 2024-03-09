@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class LocationPage extends StatelessWidget {
   final List<String> imagePaths =
@@ -7,71 +7,167 @@ class LocationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
+    return Scaffold(
+      body: Padding(
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        child: ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          itemCount: imagePaths.length,
-          itemBuilder: (BuildContext context, int i) {
-            return Padding(
-              padding: EdgeInsets.symmetric(vertical: 10),
-              child: Container(
-                width: 380,
-                height: 150,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 3,
-                      blurRadius: 10,
-                      offset: Offset(0, 3),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  children: [
-                    InkWell(
-                      onTap: () {},
-                      child: Container(
-                        alignment: Alignment.center,
-                        padding: EdgeInsets.all(8),
-                        child: Image.asset(
-                          imagePaths[i],
-                          width: 120,
-                          height: 150,
+        child: ListView(
+          children: [
+            AppBar(
+              title: Text("LocationPage"),
+            ),
+            for (int i = 0; i < imagePaths.length; i++)
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Container(
+                  width: 380,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 3,
+                        blurRadius: 10,
+                        offset: Offset(0, 3),
+                      )
+                    ],
+                  ),
+                  child: Row(
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: Container(
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(8),
+                          child: Image.asset(
+                            imagePaths[i],
+                            width: 2000,
+                            height: 200,
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      width: 170,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text(
-                            "Hot Wall Neons",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
+                      Container(
+                        width: 170,
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "Hot Wall Neons",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ]),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            );
-          },
+          ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+
+// class LocationPage extends StatelessWidget {
+//   final List<String> imagePaths =
+//       List.generate(14, (index) => "images/location/location_${index + 1}.jpeg");
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return SingleChildScrollView(
+//       child: Padding(
+//         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+//         child: ListView.builder(
+//           physics: NeverScrollableScrollPhysics(),
+//           shrinkWrap: true,
+//           itemCount: imagePaths.length,
+//           itemBuilder: (BuildContext context, int i) {
+//             return Padding(
+//               padding: EdgeInsets.symmetric(vertical: 10),
+//               child: Container(
+//                 width: 380,
+//                 height: 150,
+//                 decoration: BoxDecoration(
+//                   color: Colors.white,
+//                   borderRadius: BorderRadius.circular(10),
+//                   boxShadow: [
+//                     BoxShadow(
+//                       color: Colors.grey.withOpacity(0.5),
+//                       spreadRadius: 3,
+//                       blurRadius: 10,
+//                       offset: Offset(0, 3),
+//                     ),
+//                   ],
+//                 ),
+//                 child: Row(
+//                   children: [
+//                     InkWell(
+//                       onTap: () {},
+//                       child: Container(
+//                         alignment: Alignment.center,
+//                         padding: EdgeInsets.all(8),
+//                         child: Image.asset(
+//                           imagePaths[i],
+//                           width: 120,
+//                           height: 150,
+//                         ),
+//                       ),
+//                     ),
+//                     Container(
+//                       width: 170,
+//                       child: Column(
+//                         crossAxisAlignment: CrossAxisAlignment.start,
+//                         mainAxisAlignment: MainAxisAlignment.spaceAround,
+//                         children: [
+//                           Text(
+//                             "Hot Wall Neons",
+//                             style: TextStyle(
+//                               fontSize: 15,
+//                               fontWeight: FontWeight.bold,
+//                             ),
+//                           ),
+//                         ],
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             );
+//           },
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 
 
