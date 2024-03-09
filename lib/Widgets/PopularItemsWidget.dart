@@ -44,7 +44,7 @@ class PopularItemsWidget extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "Hot Graphiti",
+                          "Best Services",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -57,7 +57,8 @@ class PopularItemsWidget extends StatelessWidget {
                           height: 50, // Set a fixed height or use constraints
                           child: SingleChildScrollView(
                             child: Text(
-                              "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                              // "Have the best of our arts, a really long description that may not fit in a single line and should be scrollable if it exceeds the available space.",
+                              "Access top-notch medical services with a comprehensive range of healthcare offerings. Detailed information is provided, ensuring transparency and allowing for a thorough understanding of our services. For a detailed description, a scrollable interface is available to accommodate extensive information.",
                               style: TextStyle(
                                 fontSize: 10,
                               ),
