@@ -295,11 +295,12 @@ class CategoriesWidget extends StatelessWidget {
               onTap: () {
                 // Handle the tap event for the specific category
                 // print('Tapped on ${captions[index]}');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
+                // );
                 // Navigator.pushNamed(context, "itemPage");
+                Navigator.pushNamed(context, "${captions[index]}$index");
                 // You can navigate to a new screen or perform other actions here
               },
             ),
