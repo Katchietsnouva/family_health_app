@@ -300,7 +300,7 @@ class CategoriesWidget extends StatelessWidget {
                 //   MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
                 // );
                 // Navigator.pushNamed(context, "itemPage");
-                Navigator.pushNamed(context, "${captions[index]}$index");
+                Navigator.pushNamed(context, "${captions[index]}$index",);
                 // You can navigate to a new screen or perform other actions here
               },
             ),
