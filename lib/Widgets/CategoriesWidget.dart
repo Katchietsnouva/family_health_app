@@ -223,7 +223,7 @@ class CategoriesWidget extends StatelessWidget {
       // List.generate(3, (index) => "images/logo_${index + 1}.png");
       // List.generate(1, (index) => "images/logo_${index + 1}.webp");
       // List.generate(3, (index) => "images/family_health_clinic/family_${index + 1}.png");
-      List.generate(3, (index) => "images/services/service_${index + 1}.webp");
+      List.generate(10, (index) => "images/services/service_${index + 1}.webp");
 
   @override
   Widget build(BuildContext context) {

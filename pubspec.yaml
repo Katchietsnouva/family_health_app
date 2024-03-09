@@ -51,6 +51,15 @@ flutter:
 
   assets:
     - images/services/service_1.webp
+    - images/services/service_2.webp
+    - images/services/service_3.webp
+    - images/services/service_4.webp
+    - images/services/service_5.webp
+    - images/services/service_6.webp
+    - images/services/service_7.webp
+    - images/services/service_8.webp
+    - images/services/service_9.webp
+    - images/services/service_10.webp
     - images/
     - images/logo_1.png
     - images/logo_2.png
