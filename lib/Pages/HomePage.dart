@@ -284,7 +284,7 @@ class HomePage extends StatelessWidget {
 
             // TAB BAR VIEW
             Container(
-              height: 100,  // Set the height for tab content
+              height: 200,  // Set the height for tab content
               child: TabBarView(
                 children: [
                   // SERVICE CATEGORIES (Tab 1)
