@@ -14,3 +14,121 @@ class LocationWidget extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+import 'package:flutter/material.dart';
+
+class ServicesWidget extends StatelessWidget {
+  final List<String> imagePaths =
+      List.generate(10, (index) => "images/location/location_${index + 1}.webp");
+
+  final List<String> captions = [
+    "General Consultation",
+    "Family Planning and Contraceptives",
+    "Ante-natal and Post natal Care",
+    "HIV Counseling and Testing",
+    "STI Screening",
+    "Cervical Cancer Screening",
+    "Laboratory Services and Ultrasound",
+    "Pharmacy and Nutrition",
+    "Pregnancy Crisis Counseling",
+    "Post Abortion Care"
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+        child: Row(
+          children: List.generate(
+            imagePaths.length,
+            (index) => CategoryItem(
+              imagePath: imagePaths[index],
+              caption: captions[index],
+              onTap: () {
+                // Handle the tap event for the specific category
+                // print('Tapped on ${captions[index]}');
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
+                // );
+                // Navigator.pushNamed(context, "itemPage");
+                Navigator.pushNamed(
+                  context,
+                  captions[index],
+                );
+                // You can navigate to a new screen or perform other actions here
+              },
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+class CategoryItem extends StatelessWidget {
+  final String imagePath;
+  final String caption;
+  final VoidCallback? onTap;
+
+  CategoryItem({required this.imagePath, required this.caption, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        children: [
+          GestureDetector(
+            onTap: onTap,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Image.asset(
+                imagePath,
+                width: 100,
+                height: 100,
+              ),
+            ),
+          ),
+          SizedBox(height: 5),
+          Container(
+            width: 100,
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: GestureDetector(
+                onTap: onTap,
+                child: Text(
+                  caption,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
