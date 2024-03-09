@@ -249,6 +249,10 @@
 //   }
 // }
 
+
+
+
+
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
@@ -286,6 +290,7 @@ class CategoriesWidget extends StatelessWidget {
   }
 }
 
+
 class CategoryItem extends StatelessWidget {
   final String imagePath;
   final String caption;
@@ -318,11 +323,15 @@ class CategoryItem extends StatelessWidget {
             ),
           ),
           SizedBox(height: 5),
-          Text(
-            caption,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
+          Container(
+            width: 100, // Adjust the width as needed
+            child: Text(
+              caption,
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
+              // overflow: TextOverflow.ellipsis, // Adjust overflow behavior
             ),
           ),
         ],
