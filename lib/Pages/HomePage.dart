@@ -281,7 +281,7 @@ class HomePage extends StatelessWidget {
                 Tab(text: 'Services'),  // First tab
                 Tab(text: 'Location'),  // Second tab
                 Tab(text: 'Time'),  // 3rd tab
-              ]
+              ],
             ),
 
             // TAB BAR VIEW
