@@ -253,23 +253,33 @@
 
 
 
+
+// overflow: TextOverflow.ellipsis, // Adjust overflow behavior
+
+
+
+
+git add .
+git commit -m "commit 1.01"
+git push origin main
+
+
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  final List<String> imagePaths =
-      List.generate(10, (index) => "images/services/service_${index + 1}.webp");
+  final List<String> imagePaths = List.generate(10, (index) => "images/services/service_${index + 1}.webp");
 
   final List<String> captions = [
     "General Consultation",
     "Family Planning",
     "Prenatal and Postnatal Care",
-    "hiv conselling",
-    "sti screening",
-    "cervical cancer screening",
-    "ultrasound",
-    "pharmacy and nutrition",
-    "pregnancy crisis counselling",
-    "post abortion care"
+    "HIV Counseling",
+    "STI Screening",
+    "Cervical Cancer Screening",
+    "Ultrasound",
+    "Pharmacy and Nutrition",
+    "Pregnancy Crisis Counseling",
+    "Post Abortion Care"
   ];
 
   @override
@@ -282,7 +292,14 @@ class CategoriesWidget extends StatelessWidget {
           children: List.generate(
             imagePaths.length,
             (index) => CategoryItem(
-                imagePath: imagePaths[index], caption: captions[index]),
+              imagePath: imagePaths[index],
+              caption: captions[index],
+              onTap: () {
+                // Handle the tap event for the specific category
+                print('Tapped on ${captions[index]}');
+                // You can navigate to a new screen or perform other actions here
+              },
+            ),
           ),
         ),
       ),
@@ -290,12 +307,12 @@ class CategoriesWidget extends StatelessWidget {
   }
 }
 
-
 class CategoryItem extends StatelessWidget {
   final String imagePath;
   final String caption;
+  final VoidCallback? onTap;
 
-  CategoryItem({required this.imagePath, required this.caption});
+  CategoryItem({required this.imagePath, required this.caption, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -303,35 +320,34 @@ class CategoryItem extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 2,
-                  blurRadius: 10,
-                  offset: Offset(0, 3),
-                ),
-              ],
-            ),
-            child: Image.asset(
-              imagePath,
-              width: 100,
-              height: 100,
+          InkWell(
+            onTap: onTap,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Image.asset(
+                imagePath,
+                width: 100,
+                height: 100,
+              ),
             ),
           ),
           SizedBox(height: 5),
-          Container(
-            width: 100, // Adjust the width as needed
-            child: Text(
-              caption,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-              ),
-              // overflow: TextOverflow.ellipsis, // Adjust overflow behavior
+          Text(
+            caption,
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ],
