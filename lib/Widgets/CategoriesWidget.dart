@@ -300,12 +300,12 @@ class CategoriesWidget extends StatelessWidget {
                 //   MaterialPageRoute(builder: (context) => ServicePage(captions[index])),
                 // );
                 // Navigator.pushNamed(context, "itemPage");
-                Navigator.pushNamed(context, "${captions[index]}$index",);
+                Navigator.pushNamed(context, captions[index],);
                 // You can navigate to a new screen or perform other actions here
               },
             ),
           ),
-        ),
+        ), 
       ),
     );
   }
@@ -361,20 +361,20 @@ class CategoryItem extends StatelessWidget {
 }
 
 
-class ServicePage extends StatelessWidget {
-  final String serviceName;
+// class ServicePage extends StatelessWidget {
+//   final String serviceName;
 
-  ServicePage(this.serviceName);
+//   ServicePage(this.serviceName);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(serviceName),
-      ),
-      body: Center(
-        child: Text('This is the page for $serviceName'),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text(serviceName),
+//       ),
+//       body: Center(
+//         child: Text('This is the page for $serviceName'),
+//       ),
+//     );
+//   }
+// }

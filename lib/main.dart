@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget{
         "/" : (context) => HomePage(),
         "cartPage" : (context) => CartPage(),
         "itemPage" : (context) => ItemsPage(),
-        "GeneralConsultation0" : (context) => GeneralConsultation(), 
+        "General Consultation" : (context) => GeneralConsultation(), 
         // for (int i = 0; i < captions.length; i++)
         //   "${captions[i]}$i": (context) => ServicePage(i + 1), // Assuming ServicePage accepts an index
       },
